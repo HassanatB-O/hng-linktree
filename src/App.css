@@ -1,0 +1,73 @@
+.App{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.linktree--div{
+  margin: auto;
+  width: 80%;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+/* Profile  */
+#profile-img{
+  width: 88px;
+  margin: auto;
+  height: 88px;
+  margin-bottom: .5rem;
+}
+h2{
+  font-size: 1.25rem;
+  color: #101828;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+#slack{
+  visibility: hidden;
+}
+/* Profile  */
+
+.link{
+  background: #EAECF0;
+  border: 1px solid #EAECF0;
+  padding: 1rem;
+  margin: .8rem 0;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+.link:hover{
+  
+  border: 1px solid #101828;
+}
+a{
+  text-decoration: none;
+  color: #101828;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.description{
+  font-size: .8rem;
+  font-weight: 600;
+  margin-top: .5rem;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2em;
+  color: #667085;
+}
+
+@media screen and (max-width: 800px){
+  .linktree--div{
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+  .footer{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer p{
+    margin: .8em 0;
+  }
+}
