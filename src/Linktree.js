@@ -22,25 +22,21 @@ export default function Linktree() {
             <a href='http://books.zuri.team'>
                 <div className='link'  id='books'>
                     <p>Zuri Books</p>
-                    <p className='description'>Here you can find books about design and coding and also answers to questions you may have.</p>
                 </div>
             </a>
             <a href='https://books.zuri.team/python-for-beginners?ref_id=HassanatB-O'>
                 <div className='link' id='book__python'>
                     <p>Python Book</p>
-                    <p className='description'>With The Zuri Book you can get vast knowledge about design and coding. The content in this book has been carefully curated by learned developers just for you.</p>
                 </div>
             </a>
             <a href='https://background.zuri.team'>
                 <div className='link' id='pitch'>
                     <p>Background Checks for Coders</p>
-                    <p className='description'>Need to get information on a developer? No need to look further!</p>
                 </div>
             </a>
             <a href='https://books.zuri.team/design-rules'>
                 <div className='link' id='book__design'>
                     <p>Design Books</p>
-                    <p className='description'>Are you a designer? Zuri offers access to free guidelines for you to excel at building art.</p>
                 </div>
             </a>
             <div className='icons'>
