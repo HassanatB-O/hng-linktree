@@ -25,6 +25,31 @@ h2{
 #slack{
   visibility: hidden;
 }
+hr{
+  width: 90%;
+  margin: auto;
+}
+.share--icon, .ellipsis{
+  border: 1px dashed #D0D5DD;
+  border-radius: 50%;
+  padding: .5rem;
+  cursor: pointer;
+}
+.share--icon:disabled, .ellipsis:disabled{
+  background: #F9FAFB;
+  border: 1px dashed #EAECF0;
+}
+.share--icon:focus, .ellipsis:focus{
+  border: 1px dashed #D0D5DD;
+  box-shadow: 0px 0px 0px 4px #F2F4F7;
+}
+.share--icon:hover, .ellipsis:hover{
+  background: #F9FAFB;
+  border: 1px dashed #D0D5DD;
+}
+.ellipsis{
+  display: none;
+}
 /* Profile  */
 
 .link{
@@ -77,6 +102,16 @@ a{
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
+  }
+  .ellipsis{
+    display: block;
+    float: right;
+  }
+  .share--icon{
+    display: none;
+  }
+  hr{
+    width: 100%;
   }
   .footer p{
     margin: .5em 0;
