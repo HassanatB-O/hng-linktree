@@ -4,12 +4,16 @@ export default function Linktree() {
   return (
     <div className='linktree--div'>
         <div>
-            <img src='Image/New Note.png' alt='a memoji of a dark skin hijabi with a nose ring smiling with teeth' id='profile-img'/>
+            <div>
+                <img src='Image/New Note.png' alt='a memoji of a dark skin hijabi with a nose ring smiling with teeth' id='profile-img'/>
+                <img src='Image/share.svg' className='share--icon' alt='the share icon'/>
+                <img src='Image/ellipsis.svg' className='ellipsis' alt='the ellipsis icon represented with three grey periods'/>
+            </div>
         </div>
-        <h2 id='twitter'>Ayobusarii</h2>
+        <h2 id='twitter' style={{clear: 'right'}}>Ayobusarii</h2>
         <h2 id='slack'>HassanatB-O</h2>
         <div className='links-div'>
-            <a href='https://twitter.com/Ayobusarii'>
+             <a href='https://twitter.com/Ayobusarii'>
                 <p className='link' id='btn__zuri'>Twitter Link</p>
             </a>
             <a href='https://training.zuri.team/'>
@@ -23,7 +27,7 @@ export default function Linktree() {
             </a>
             <a href='https://books.zuri.team/python-for-beginners?ref_id=HassanatB-O'>
                 <div className='link' id='book__python'>
-                    <p>Python Books</p>
+                    <p>Python Book</p>
                     <p className='description'>With The Zuri Book you can get vast knowledge about design and coding. The content in this book has been carefully curated by learned developers just for you.</p>
                 </div>
             </a>
@@ -46,6 +50,7 @@ export default function Linktree() {
                 </div>
             </div>
         </div>
+        <hr/>
         <div className='footer'>
             <div>
                 <img src='/Image/Zuri-logo.svg' alt='a logo spelling out Zuri Internship in black, bold colors'/>
