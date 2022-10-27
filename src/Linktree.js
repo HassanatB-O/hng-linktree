@@ -20,24 +20,16 @@ export default function Linktree() {
                 <p className='link' id='btn__zuri'>Zuri Team</p>
             </a>
             <a href='http://books.zuri.team'>
-                <div className='link'  id='books'>
-                    <p>Zuri Books</p>
-                </div>
+                <p className='link' id='books'>Zuri Books</p>
             </a>
             <a href='https://books.zuri.team/python-for-beginners?ref_id=HassanatB-O'>
-                <div className='link' id='book__python'>
-                    <p>Python Book</p>
-                </div>
+                <p className='link' id='book__python'>Python Books</p>
             </a>
             <a href='https://background.zuri.team'>
-                <div className='link' id='pitch'>
-                    <p>Background Checks for Coders</p>
-                </div>
+                <p className='link' id='pitch'>Background Checks for Coders</p>
             </a>
             <a href='https://books.zuri.team/design-rules'>
-                <div className='link' id='book__design'>
-                    <p>Design Books</p>
-                </div>
+                <p className='link' id='book__design'>Design Books</p>
             </a>
             <div className='icons'>
                 <div>
