@@ -35,6 +35,10 @@ hr{
   padding: .5rem;
   cursor: pointer;
 }
+.share--icon{
+  position: absolute;
+  margin-left: 300px;
+}
 .share--icon:disabled, .ellipsis:disabled{
   background: #F9FAFB;
   border: 1px dashed #EAECF0;
