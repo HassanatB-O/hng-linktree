@@ -1,0 +1,66 @@
+.Contact{
+    margin: auto;
+    width: 60%;
+}
+.user__name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 1em 0;
+}
+h1{
+    font-weight: 600;
+    color: #101828;
+    margin: .5em 0;
+    font-size: 2.25rem;
+}
+p{
+    color: #475467;
+}
+label{
+    color: #344054;
+    font-weight: 500;
+    font-size: .875rem;
+    display: inline-block;
+    margin: 1em 0;
+}
+input, textarea{
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: .75rem 0.875rem;
+}
+#message, #email, #first_name, #last_name{
+    width: 100%;
+}
+textarea{
+    height: 100px;
+}
+#checkbox{
+    vertical-align: middle;
+    margin: 1em 0;
+    margin-right: 3px;
+}
+::placeholder{
+    color: #667085;
+}
+button{
+    background-color: #1570EF;
+    color: #FFFFFF;
+    border: 1px solid #1570EF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    margin: 1rem 0;
+    width: 100%;
+    padding: .8rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px){
+    .Contact{
+        width: 90%;
+    }
+    .user__name{
+        grid-template-columns: 1fr;
+    }
+}

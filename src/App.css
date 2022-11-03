@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  position: relative;
 }
 .linktree--div{
   margin: auto;
   width: 80%;
-  padding: 2rem 4rem;
+  padding: 0 4rem;
   text-align: center;
 }
 /* Profile  */
@@ -25,6 +26,31 @@ h2{
 #slack{
   visibility: hidden;
 }
+.share--icon, .ellipsis{
+  border: 1px dashed #D0D5DD;
+  border-radius: 50%;
+  padding: .5rem;
+  cursor: pointer;
+}
+.share--icon{
+  position: absolute;
+  margin-left: 300px;
+}
+.share--icon:disabled, .ellipsis:disabled{
+  background: #F9FAFB;
+  border: 1px dashed #EAECF0;
+}
+.share--icon:focus, .ellipsis:focus{
+  border: 1px dashed #D0D5DD;
+  box-shadow: 0px 0px 0px 4px #F2F4F7;
+}
+.share--icon:hover, .ellipsis:hover{
+  background: #F9FAFB;
+  border: 1px dashed #D0D5DD;
+}
+.ellipsis{
+  display: none;
+}
 /* Profile  */
 
 .link{
@@ -35,9 +61,16 @@ h2{
   border-radius: 8px;
   border: 1px solid transparent;
 }
+.link:disabled{
+  background-color: #FCFCFD;
+}
+.link:focus{
+  background-color: #EAECF0;
+}
 .link:hover{
-  
-  border: 1px solid #101828;
+  background: #D0D5DD;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 }
 a{
   text-decoration: none;
@@ -50,6 +83,17 @@ a{
   font-weight: 600;
   margin-top: .5rem;
 }
+.icons{
+  padding-bottom: 1rem;
+}
+
+/* Footer */
+.Footer{
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  padding-bottom: .5rem;
+}
 .footer{
   display: flex;
   justify-content: space-between;
@@ -57,6 +101,14 @@ a{
   margin-top: 1.2em;
   color: #667085;
 }
+hr{
+  width: 90%;
+  margin: auto;
+  background-color: #D0D5DD;
+  height: 0.2px;
+  opacity: .3;
+}
+/* Footer */
 
 @media screen and (max-width: 800px){
   .linktree--div{
@@ -65,7 +117,18 @@ a{
   }
   .footer{
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
+    align-items: flex-start;
+  }
+  .ellipsis{
+    display: block;
+    float: right;
+  }
+  .share--icon{
+    display: none;
+  }
+  hr{
+    width: 100%;
   }
   .footer p{
     margin: .8em 0;
