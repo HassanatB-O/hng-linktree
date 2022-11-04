@@ -2,11 +2,10 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  position: relative;
 }
 .linktree--div{
   margin: auto;
-  width: 80%;
+  width: 75%;
   padding: 0 4rem;
   text-align: center;
 }
@@ -88,6 +87,10 @@ a{
 }
 
 /* Footer */
+.linktree--div .Footer{
+  width: 65%;
+  margin: auto;
+}
 .Footer{
   position: absolute;
   bottom: 0;
@@ -115,6 +118,10 @@ hr{
     width: 90%;
     padding: 2rem 1rem;
   }
+  .Footer{
+    position: static;
+    margin: 0;
+  }
   .footer{
     flex-direction: column;
     justify-content: left;
@@ -128,7 +135,7 @@ hr{
     display: none;
   }
   hr{
-    width: 100%;
+    width: 90vw;
   }
   .footer p{
     margin: .8em 0;
