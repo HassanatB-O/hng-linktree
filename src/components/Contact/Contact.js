@@ -11,9 +11,7 @@ export default function Contact() {
   // the schema contains the set of rules defined to validate the form
   const schema = yup.object().shape(
     {
-      // An error is thrown if the form is submitted and the input fields are empty
-      firstname: yup.string().required('Please enter your first name'),
-      lastname: yup.string().required('Please enter your last name'),
+      // An error is thrown if the form is submitted and the input field is empty
       email: yup.string().required('Please enter a valid email'),
       textarea: yup.string().required('Please enter a message')
     }
@@ -27,9 +25,10 @@ export default function Contact() {
   
   const onSubmit = () =>{
     alert('Message Sent')
-    document.querySelectorAll("input").forEach(input=>{
+    document.querySelectorAll(".input-field").forEach(input=>{
       input.value = ""
-    })
+      console.log(input.length)
+    })    
   }
 
   return (
@@ -40,23 +39,19 @@ export default function Contact() {
         <div className='user__name'>
           <div>
             <label htmlFor='first_name'>First Name</label><br/>
-            <input type='text' id='first_name'  placeholder='Enter your first name' {...register("firstname")}/><br/>
-            {/* The span contains the error message that is thrown */}
-            <span className="error__message">{errors.firstname?.message}</span><br/>
+            <input type='text' id='first_name' className='input-field' placeholder='Enter your first name'/><br/>
           </div>
           <div>
             <label htmlFor='last_name'>Last Name</label><br/>
-            <input type='text' id='last_name'  placeholder='Enter your last name' {...register("lastname")} />
-            {/* The span contains the error message that is thrown */}
-            <span className="error__message">{errors.lastname?.message}</span><br/>
+            <input type='text' id='last_name' className='input-field' placeholder='Enter your last name'/>
           </div>
         </div>
         <label htmlFor='email'>Email</label><br/>
-        <input id='email' type='email' placeholder='yourname@email.com'  {...register("email")}/><br/>
+        <input id='email' type='email' placeholder='yourname@email.com' className='input-field' {...register("email")}/><br/>
             {/* The span contains the error message that is thrown */}
         <span className="error__message">{errors.email?.message}</span><br/>
         <label htmlFor='message'>Message</label><br/>
-        <textarea id='message' type='text' placeholder="Send me a message and I'll reply as soon as possible..." {...register("textarea")}/><br/>
+        <textarea id='message' type='text' className='input-field' placeholder="Send me a message and I'll reply as soon as possible..." {...register("textarea")} /><br/>
             {/* The span contains the error message that is thrown */}
         <span className="error__message">{errors.textarea?.message}</span><br/>
         
