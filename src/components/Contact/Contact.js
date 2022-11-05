@@ -32,15 +32,6 @@ export default function Contact() {
       input.value = ""
       setBorder(true)
     })   
-    handleChange()
-  }
-
-  const handleChange = (e) =>{
-    const {value} = e.target
-    console.log(value)
-    if(value === ''){
-      setBorder(true)
-    }
   }
 
    return (
@@ -61,7 +52,7 @@ export default function Contact() {
         <label htmlFor='email'>Email</label><br/>
         <input id='email' type='email' placeholder='yourname@email.com' className='input-field'/><br/>
         <label htmlFor='message'>Message</label><br/>
-        <textarea id='message' type='text' className={border ? 'border__show' : ''} onChange={handleChange} placeholder="Send me a message and I'll reply as soon as possible..." {...register("textarea")} /><br/>
+        <textarea id='message' type='text' className='input-field' placeholder="Send me a message and I'll reply as soon as possible..." {...register("textarea")} /><br/>
             {/* The span contains the error message that is thrown */}
         <span className="error__message">{errors.textarea?.message}</span><br/>
         
