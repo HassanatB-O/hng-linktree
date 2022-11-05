@@ -41,15 +41,23 @@ input:focus{
 }
 textarea{
     height: 100px;
-}
-textarea:focus{
-    outline: #84CAFF;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+    outline: none;
 }
 .error__message{
+    display: none;
     color: #F83F23;
     font-size: 0.875rem;
+}
+textarea:focus:invalid{
+    border: 1px solid #F89687;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
+}
+textarea:focus:invalid ~ .error__message{
+    display: block;
+}
+textarea:focus:valid{
+    outline: #84CAFF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
 }
 #checkbox{
     vertical-align: middle;
@@ -74,9 +82,6 @@ textarea:focus{
 #checkbox:disabled{
     background: #F2F4F7;
     border: 1px solid #D0D5DD;
-}
-.border__show{
-    border: 1px solid #F89687;
 }
 .border__show:focus{
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
