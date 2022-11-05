@@ -78,8 +78,8 @@ textarea:focus{
 .border__show{
     border: 1px solid #F89687;
 }
-.border__hidden{
-    border: 1px solid #D0D5DD;;
+.border__show:focus{
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
 }
 ::placeholder{
     color: #667085;
