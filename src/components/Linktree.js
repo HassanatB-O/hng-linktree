@@ -34,7 +34,7 @@ export default function Linktree() {
                 <p className='link' id='book__design'>Design Books</p>
             </a>
             <Link to='/contact'>
-                <p className='link' id='book__design'>Contact Me</p>
+                <p className='link' id='contact'>Contact Me</p>
             </Link>
             <div className='icons'>
                 <div>

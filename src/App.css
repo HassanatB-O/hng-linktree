@@ -118,9 +118,11 @@ hr{
     width: 90%;
     padding: 2rem 1rem;
   }
+  .linktree--div .Footer,
   .Footer{
     position: static;
     margin: 0;
+    width: 100%;
   }
   .footer{
     flex-direction: column;
@@ -135,7 +137,8 @@ hr{
     display: none;
   }
   hr{
-    width: 90vw;
+    width: 80vw;
+    margin: auto;
   }
   .footer p{
     margin: .8em 0;
